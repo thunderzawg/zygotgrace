@@ -1,0 +1,16 @@
+# The world the grace period and combat log work in. Capital letters don't matter.
+world: Survival
+
+combat-log:
+  # How long a player stays tagged after a PvP hit.
+  tag-seconds: 15
+  # Commands that still work while tagged (no slash). Add more if you need them.
+  allowed-commands:
+    - login
+    - l
+    - register
+    - reg
+
+grace:
+  min-hours: 1
+  max-hours: 20

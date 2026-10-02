@@ -1,0 +1,20 @@
+name: ZygotGrace
+version: '1.0'
+main: com.zygot.grace.ZygotGrace
+api-version: '1.21'
+description: Grace period and combat log for the Survival world.
+softdepend: [Multiverse-Core]
+
+commands:
+  zgrace:
+    description: Control the grace period
+    usage: /zgrace <start <time>|stop|status>
+    aliases: [grace]
+
+permissions:
+  zygotgrace.admin:
+    description: Start and stop the grace period
+    default: op
+  zygotgrace.bypass:
+    description: Use any command while combat tagged
+    default: false
